@@ -12,6 +12,15 @@ public class CalcoliTest {
 		System.out.println("Valore assoluto: " + CalcoliHelper.valoreAssoluto(-7));
 		System.out.println("Numero minimo: " + CalcoliHelper.numeroMinimo(7, 25));
 		System.out.println("Numero massimo: " + CalcoliHelper.numeroMassimo(7, 25));
+		
+		// Testo i metodi sovrascritti dall'overload
+		
+		System.out.println("Somma: " + CalcoliHelper.somma(7.45, 25.32));
+		System.out.println("Differenza: " + CalcoliHelper.differenza(7.45, 25.32));
+		System.out.println("Moltiplicazione: " + CalcoliHelper.moltiplicazione(7.45, 3.35));
+		System.out.println("Valore assoluto: " + CalcoliHelper.valoreAssoluto(-7.45));
+		System.out.println("Numero minimo: " + CalcoliHelper.numeroMinimo(7.45, 25.32));
+		System.out.println("Numero massimo: " + CalcoliHelper.numeroMassimo(7.45, 25.32));
 	}
 
 }

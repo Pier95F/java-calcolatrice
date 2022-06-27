@@ -10,6 +10,7 @@ public class CalcoliHelper {
 	- Minimo tra due numeri interi
 	- Massimo tra due numeri interi */
 	
+	
 	private CalcoliHelper() {
 		
 	}
@@ -62,4 +63,46 @@ public class CalcoliHelper {
 		}
 	}
 	
+	/* BONUS 1: per ogni metodo scrivetene una versione che esegue le stesse operazioni ma su parametri double. */
+	
+	// Definisco l'overload dei singoli metodi
+	public static double somma (double x, double y) {
+		return x+y;
+	}
+	
+	public static double differenza (double x, double y) {
+		if (x>y) {
+			return x-y;
+		} else {
+			return y-x;
+		}
+	}
+	
+	public static double moltiplicazione (double x, double y) {
+		return x*y;
+	}
+	
+	public static double valoreAssoluto (double x) {
+		if (x>=0) {
+			return x;
+		} else {
+			return x*-1;
+		}
+	}
+	
+	public static double numeroMinimo (double x, double y) {
+		if (x<y) {
+			return x;
+		} else {
+			return y;
+		}
+	}
+	
+	public static double numeroMassimo (double x, double y) {
+		if (x>y) {
+			return x;
+		} else {
+			return y;
+		}
+	}
 }
