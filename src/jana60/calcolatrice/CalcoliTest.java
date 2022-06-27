@@ -21,6 +21,15 @@ public class CalcoliTest {
 		System.out.println("Valore assoluto: " + CalcoliHelper.valoreAssoluto(-7.45));
 		System.out.println("Numero minimo: " + CalcoliHelper.numeroMinimo(7.45, 25.32));
 		System.out.println("Numero massimo: " + CalcoliHelper.numeroMassimo(7.45, 25.32));
+		
+		
+		// Testo il metodo per l'elevamento a potenza 
+		
+		System.out.println("Elevamento a potenza: " + CalcoliHelper.potenza(3, -3));
+		System.out.println("Elevamento a potenza: " + CalcoliHelper.potenza(3, 4));
+		System.out.println("Elevamento a potenza: " + CalcoliHelper.potenza(3, 0));
+		System.out.println("Elevamento a potenza: " + CalcoliHelper.potenza(3, 1));
+		
 	}
 
 }

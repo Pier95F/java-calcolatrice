@@ -104,5 +104,30 @@ public class CalcoliHelper {
 		} else {
 			return y;
 		}
+		}
+	
+	/* BONUS2: aggiungete il metodo per l’elevamento a potenza che prende come parametri due numeri interi (base ed esponente) e ritorna la base elevata all’esponente. */
+	
+	public static double potenza(int base, int esponente) {
+		double potenza = 1;
+		if (base == 0 && esponente == 0) {
+			return 1;
+
+		} else if (esponente < 0) {
+			for (int i = 1; i <= -esponente; i++) {
+				potenza = potenza * base;
+			}
+			double risultato = 0;
+			risultato = 1 / potenza;
+			return risultato;
+			
+		} else {
+			for (int i = 1; i <= esponente; i++) {
+				potenza = potenza * base;
+			}
+			return potenza;
+		}
+		
 	}
-}
+	}
+
